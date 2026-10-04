@@ -27,11 +27,17 @@ export default function Header({ onSelectCategory }) {
 
   return (
     <>
+      {/* Micro Announcement Bar */}
+      <div className="bg-[#1B1917] text-[#DEC195] text-[11px] py-1.5 px-4 text-center tracking-wider uppercase font-medium flex items-center justify-center gap-2 border-b border-[#332E29]">
+        <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] animate-pulse" />
+        <span>Showroom Abierto en Av. Pedro Luro 3902 · Fabricación a Medida & Asesoramiento por WhatsApp</span>
+      </div>
+
       <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+        className={`sticky top-0 left-0 right-0 z-40 transition-all duration-300 ${
           isScrolled
-            ? 'editorial-glass shadow-xs border-b border-[#EAE4DC] py-3.5'
-            : 'bg-[#FAF8F5]/90 md:bg-transparent py-4 md:py-6'
+            ? 'editorial-glass shadow-xs border-b border-[#EAE4DC] py-3'
+            : 'bg-[#FAF8F5]/95 md:bg-[#FAF8F5]/80 backdrop-blur-md py-3.5 md:py-4 border-b border-[#EAE4DC]/60'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -112,20 +112,25 @@ export default function App() {
           />
 
           {/* Assisted consult note */}
-          <div className="mt-12 p-4 sm:p-6 rounded-2xl bg-[#F4EFEA] border border-[#EAE4DC] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-            <div>
-              <p className="text-sm font-semibold text-[#1B1917]">
-                ¿Buscás un modelo en particular o no encontrás lo que necesitás?
-              </p>
-              <p className="text-xs text-[#78716C] mt-0.5">
-                Tenemos más modelos en el taller y fabricamos muebles a pedido en Mar del Plata.
-              </p>
+          <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-linear-to-r from-[#F4EFEA] via-white to-[#F4EFEA] border border-[#EAE4DC] flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left shadow-sm">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-2xl bg-[#B58548]/15 border border-[#B58548]/30 flex items-center justify-center text-[#B58548] shrink-0">
+                <span className="font-serif text-xl font-bold">L</span>
+              </div>
+              <div>
+                <p className="text-base font-semibold text-[#1B1917]">
+                  ¿Buscás un modelo en particular o necesitás adaptar medidas?
+                </p>
+                <p className="text-xs sm:text-sm text-[#78716C] mt-1">
+                  Tenemos más piezas en producción en nuestro taller de Mar del Plata y fabricamos según tu plano o croquis.
+                </p>
+              </div>
             </div>
             <a
               href={brandConfig.getWhatsAppLink("Hola! Quería consultarles si tienen o fabrican un modelo específico de mueble.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 px-5 py-2.5 rounded-xl bg-[#1B1917] hover:bg-[#B58548] text-white text-xs font-semibold tracking-wider uppercase transition-colors"
+              className="shrink-0 px-6 py-3.5 rounded-xl bg-[#1B1917] hover:bg-[#B58548] text-white text-xs font-bold tracking-wider uppercase transition-all shadow-sm hover:shadow-md active:scale-97 cursor-pointer"
             >
               Consultar con un asesor
             </a>
