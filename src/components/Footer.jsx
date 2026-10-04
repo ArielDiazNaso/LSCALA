@@ -106,7 +106,7 @@ export default function Footer({ onSelectCategory }) {
                 <MapPin className="w-4 h-4 text-[#B58548] shrink-0 mt-0.5" />
                 <div>
                   <p className="font-semibold text-white">{brandConfig.location.address}</p>
-                  <p className="text-stone-400 text-xs">{brandConfig.location.city}</p>
+                  <p className="text-stone-400 text-xs">{brandConfig.location.postalCode} {brandConfig.location.city}, {brandConfig.location.province}</p>
                 </div>
               </div>
 

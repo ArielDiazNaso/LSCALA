@@ -9,10 +9,12 @@ export const brandConfig = {
   tagline: "Muebles de madera maciza & diseño contemporáneo",
   location: {
     city: "Mar del Plata, Argentina",
+    postalCode: "B7600",
     address: "Av. Pedro Luro 3902",
+    fullAddress: "Av. Pedro Luro 3902, B7600 Mar del Plata, Provincia de Buenos Aires",
     crossStreets: "Esq. Jujuy / San Juan",
     province: "Provincia de Buenos Aires",
-    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Av.+Pedro+Luro+3902,+Mar+del+Plata"
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Av.+Pedro+Luro+3902,+B7600+Mar+del+Plata,+Provincia+de+Buenos+Aires"
   },
   contact: {
     phone: "(0223) 536-7385",

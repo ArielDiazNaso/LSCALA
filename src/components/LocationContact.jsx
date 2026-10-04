@@ -125,8 +125,11 @@ export default function LocationContact() {
                   <MapPin className="w-6 h-6 text-[#B58548] shrink-0" />
                   <span>{brandConfig.location.address}</span>
                 </h3>
-                <p className="text-xs sm:text-sm text-[#57534E] mt-1.5 pl-8">
-                  {brandConfig.location.crossStreets} · {brandConfig.location.city}
+                <p className="text-xs sm:text-sm text-[#57534E] mt-1.5 pl-8 font-medium">
+                  {brandConfig.location.postalCode} {brandConfig.location.city}, {brandConfig.location.province}
+                </p>
+                <p className="text-xs text-[#78716C] mt-0.5 pl-8">
+                  {brandConfig.location.crossStreets}
                 </p>
               </div>
 
